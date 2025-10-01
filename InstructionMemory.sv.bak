@@ -1,0 +1,23 @@
+module InstructionMemory (
+    input  logic [31:0] pc,             // Program Counter (byte address)
+    output logic [31:0] instruction
+);
+
+    // Let's say we store 256 instructions max (1KB total)
+    logic [31:0] mem [0:255];
+
+    // Word-aligned access: pc[31:2] selects instruction index
+    assign instruction = mem[pc[31:2]];
+
+    // Optionally preload with instructions (for simulation)
+    initial begin
+        // Example: preload memory with a program
+        // You can also load from file:
+        // $readmemh("program.hex", mem);
+        mem[0] = 32'h00000013; // NOP (ADDI x0, x0, 0)
+        mem[1] = 32'h002081B3; // ADD x3, x1, x2
+        mem[2] = 32'h40318233; // SUB x4, x3, x3
+        mem[3] = 32'h0000006F; // JAL x0, 0 (infinite loop)
+    end
+
+endmodule

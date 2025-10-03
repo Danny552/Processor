@@ -18,6 +18,10 @@ module RegisterUnit (
             for (i = 0; i < 32; i++) begin
                 regs[i] <= 32'b0;
             end
+				//x1 = 12, x2 = 6, x4 = 20
+				regs[1] <= 32'd12;
+				regs[2] <= 32'd6;
+				regs[4] <= 32'd20;
         end else if (RegWrite && (rd != 5'd0)) begin
             regs[rd] <= WriteData;
         end

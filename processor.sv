@@ -1,6 +1,7 @@
 module processor (
-    input  logic clk,
-    input  logic reset
+    input logic clk,
+	 input logic reset,
+	 output wire [6:0] display1, display2, display3, display4, display5, display6 
 );
     // PC
     logic [31:0] pc;
@@ -32,6 +33,15 @@ module processor (
     assign rs2    = instruction[24:20];
     assign funct7 = instruction[31:25];
 
+	 hexa show_display(
+			.seg1(display1),
+			.seg2(display2),
+			.seg3(display3),
+			.seg4(display4),
+			.seg5(display5),
+			.seg6(display6),
+			.binary(rd)
+	 );
 
     // Control unit
     logic [3:0] alu_ctrl;

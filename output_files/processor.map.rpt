@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processor
-Fri Oct  3 16:20:29 2025
+Fri Oct  3 18:26:52 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -13,11 +13,13 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Port Connectivity Checks: "RegisterUnit:RF"
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Port Connectivity Checks: "RegisterUnit:RF"
+ 11. Port Connectivity Checks: "hexa:show_display"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -44,14 +46,14 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct  3 16:20:29 2025           ;
+; Analysis & Synthesis Status     ; Successful - Fri Oct  3 18:26:52 2025           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; processor                                       ;
 ; Top-level Entity Name           ; processor                                       ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 0                                               ;
-; Total pins                      ; 2                                               ;
+; Total registers                 ; 8                                               ;
+; Total pins                      ; 44                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
 ; Total DSP Blocks                ; 0                                               ;
@@ -69,7 +71,7 @@ on the Quartus Prime software download page.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CEFA4F23C6        ;                    ;
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
 ; Top-level entity name                                                           ; processor          ; processor          ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -156,66 +158,81 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                  ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                              ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
-; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ALU.sv               ;         ;
-; processor.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv         ;         ;
-; ProgramCounter.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv    ;         ;
-; RegisterUnit.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/RegisterUnit.sv      ;         ;
-; InstructionMemory.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv ;         ;
-; ControlUnit.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv       ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                   ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
+; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/jucac/Desktop/Quar-Pro/Processor/ALU.sv               ;         ;
+; processor.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv         ;         ;
+; ProgramCounter.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/jucac/Desktop/Quar-Pro/Processor/ProgramCounter.sv    ;         ;
+; RegisterUnit.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/jucac/Desktop/Quar-Pro/Processor/RegisterUnit.sv      ;         ;
+; InstructionMemory.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/jucac/Desktop/Quar-Pro/Processor/InstructionMemory.sv ;         ;
+; ControlUnit.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/jucac/Desktop/Quar-Pro/Processor/ControlUnit.sv       ;         ;
+; hexa.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/jucac/Desktop/Quar-Pro/Processor/hexa.sv              ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimate of Logic utilization (ALMs needed) ; 0     ;
-;                                             ;       ;
-; Combinational ALUT usage for logic          ; 0     ;
-;     -- 7 input functions                    ; 0     ;
-;     -- 6 input functions                    ; 0     ;
-;     -- 5 input functions                    ; 0     ;
-;     -- 4 input functions                    ; 0     ;
-;     -- <=3 input functions                  ; 0     ;
-;                                             ;       ;
-; Dedicated logic registers                   ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 2     ;
-;                                             ;       ;
-; Total DSP Blocks                            ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 2     ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 6         ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 12        ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 0         ;
+;     -- 5 input functions                    ; 2         ;
+;     -- 4 input functions                    ; 2         ;
+;     -- <=3 input functions                  ; 8         ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 8         ;
+;                                             ;           ;
+; I/O pins                                    ; 44        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 8         ;
+; Total fan-out                               ; 106       ;
+; Average fan-out                             ; 0.98      ;
++---------------------------------------------+-----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |processor                 ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 2    ; 0            ; |processor          ; processor   ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                         ;
++-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name               ; Entity Name       ; Library Name ;
++-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------+-------------------+--------------+
+; |processor                  ; 12 (0)              ; 8 (0)                     ; 0                 ; 0          ; 44   ; 0            ; |processor                        ; processor         ; work         ;
+;    |InstructionMemory:IMEM| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|InstructionMemory:IMEM ; InstructionMemory ; work         ;
+;    |ProgramCounter:PC_inst| ; 8 (8)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ProgramCounter:PC_inst ; ProgramCounter    ; work         ;
+;    |hexa:show_display|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|hexa:show_display      ; hexa              ; work         ;
++-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------+
+; Registers Removed During Synthesis                          ;
++----------------------------------------+--------------------+
+; Register name                          ; Reason for Removal ;
++----------------------------------------+--------------------+
+; ProgramCounter:PC_inst|pc[10..31]      ; Lost fanout        ;
+; Total Number of Removed Registers = 22 ;                    ;
++----------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -223,10 +240,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 8     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 8     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -242,16 +259,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+-------+----------+---------------+
 
 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "hexa:show_display"                                                                                                                                 ;
++--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                          ;
++--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; binary ; Input  ; Warning  ; Input port expression (5 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "binary[31..5]" will be connected to GND. ;
+; leds   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                         ;
++--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 2                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 8                           ;
+;     CLR               ; 8                           ;
+; arriav_lcell_comb     ; 15                          ;
+;     arith             ; 7                           ;
+;         1 data inputs ; 6                           ;
+;         2 data inputs ; 1                           ;
+;     normal            ; 8                           ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 2                           ;
+;         4 data inputs ; 2                           ;
+;         5 data inputs ; 2                           ;
+; boundary_port         ; 44                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.69                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -269,46 +307,89 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Fri Oct  3 16:20:18 2025
+    Info: Processing started: Fri Oct  3 18:26:39 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ALU.sv Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/jucac/Desktop/Quar-Pro/Processor/ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file processor.sv
-    Info (12023): Found entity 1: processor File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 1
+    Info (12023): Found entity 1: processor File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file programcounter.sv
-    Info (12023): Found entity 1: ProgramCounter File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv Line: 1
+    Info (12023): Found entity 1: ProgramCounter File: C:/Users/jucac/Desktop/Quar-Pro/Processor/ProgramCounter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registerunit.sv
-    Info (12023): Found entity 1: RegisterUnit File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/RegisterUnit.sv Line: 1
+    Info (12023): Found entity 1: RegisterUnit File: C:/Users/jucac/Desktop/Quar-Pro/Processor/RegisterUnit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file instructionmemory.sv
-    Info (12023): Found entity 1: InstructionMemory File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv Line: 1
+    Info (12023): Found entity 1: InstructionMemory File: C:/Users/jucac/Desktop/Quar-Pro/Processor/InstructionMemory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file controlunit.sv
-    Info (12023): Found entity 1: ControlUnit File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv Line: 1
+    Info (12023): Found entity 1: ControlUnit File: C:/Users/jucac/Desktop/Quar-Pro/Processor/ControlUnit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file hexa.sv
+    Info (12023): Found entity 1: hexa File: C:/Users/jucac/Desktop/Quar-Pro/Processor/hexa.sv Line: 1
 Info (12127): Elaborating entity "processor" for the top level hierarchy
-Info (12128): Elaborating entity "ProgramCounter" for hierarchy "ProgramCounter:PC_inst" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 11
-Warning (10240): Verilog HDL Always Construct warning at ProgramCounter.sv(7): inferring latch(es) for variable "pc", which holds its previous value in one or more paths through the always construct File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv Line: 7
-Info (10041): Inferred latch for "pc[0]" at ProgramCounter.sv(7) File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv Line: 7
-Info (10041): Inferred latch for "pc[1]" at ProgramCounter.sv(7) File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv Line: 7
-Info (12128): Elaborating entity "InstructionMemory" for hierarchy "InstructionMemory:IMEM" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 18
-Warning (10030): Net "mem.data_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv Line: 5
-Warning (10030): Net "mem.waddr_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv Line: 5
-Warning (10030): Net "mem.we_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv Line: 5
-Info (12128): Elaborating entity "ControlUnit" for hierarchy "ControlUnit:CU" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 43
-Info (12128): Elaborating entity "RegisterUnit" for hierarchy "RegisterUnit:RF" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 57
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ALU_inst" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 65
+Info (12128): Elaborating entity "ProgramCounter" for hierarchy "ProgramCounter:PC_inst" File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 12
+Warning (10240): Verilog HDL Always Construct warning at ProgramCounter.sv(7): inferring latch(es) for variable "pc", which holds its previous value in one or more paths through the always construct File: C:/Users/jucac/Desktop/Quar-Pro/Processor/ProgramCounter.sv Line: 7
+Info (10041): Inferred latch for "pc[0]" at ProgramCounter.sv(7) File: C:/Users/jucac/Desktop/Quar-Pro/Processor/ProgramCounter.sv Line: 7
+Info (10041): Inferred latch for "pc[1]" at ProgramCounter.sv(7) File: C:/Users/jucac/Desktop/Quar-Pro/Processor/ProgramCounter.sv Line: 7
+Info (12128): Elaborating entity "InstructionMemory" for hierarchy "InstructionMemory:IMEM" File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 19
+Warning (10030): Net "mem.data_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/jucac/Desktop/Quar-Pro/Processor/InstructionMemory.sv Line: 5
+Warning (10030): Net "mem.waddr_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/jucac/Desktop/Quar-Pro/Processor/InstructionMemory.sv Line: 5
+Warning (10030): Net "mem.we_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/jucac/Desktop/Quar-Pro/Processor/InstructionMemory.sv Line: 5
+Info (12128): Elaborating entity "hexa" for hierarchy "hexa:show_display" File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 44
+Info (12128): Elaborating entity "ControlUnit" for hierarchy "ControlUnit:CU" File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 53
+Info (12128): Elaborating entity "RegisterUnit" for hierarchy "RegisterUnit:RF" File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 67
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ALU_inst" File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 75
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/jucac/Desktop/Quar-Pro/Processor/db/processor.ram0_InstructionMemory_d1968ec4.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "display1[1]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display1[2]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display2[0]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display2[1]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display2[2]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display2[3]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display2[4]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display2[5]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display2[6]" is stuck at VCC File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display3[0]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display3[1]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display3[2]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display3[3]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display3[4]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display3[5]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display3[6]" is stuck at VCC File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display4[0]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display4[1]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display4[2]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display4[3]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display4[4]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display4[5]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display4[6]" is stuck at VCC File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display5[0]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display5[1]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display5[2]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display5[3]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display5[4]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display5[5]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display5[6]" is stuck at VCC File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 4
+    Warning (13410): Pin "display6[0]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 5
+    Warning (13410): Pin "display6[1]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 5
+    Warning (13410): Pin "display6[2]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 5
+    Warning (13410): Pin "display6[3]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 5
+    Warning (13410): Pin "display6[4]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 5
+    Warning (13410): Pin "display6[5]" is stuck at GND File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 5
+    Warning (13410): Pin "display6[6]" is stuck at VCC File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 5
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 22 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 2
-    Warning (15610): No output dependent on input pin "reset" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 4
-Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 56 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4820 megabytes
-    Info: Processing ended: Fri Oct  3 16:20:29 2025
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:22
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 12 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 45 warnings
+    Info: Peak virtual memory: 4879 megabytes
+    Info: Processing ended: Fri Oct  3 18:26:52 2025
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:36
 
 

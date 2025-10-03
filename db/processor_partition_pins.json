@@ -2,7 +2,36 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "display1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

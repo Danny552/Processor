@@ -1,12 +1,12 @@
 module ALU(
     input  logic [31:0] S1,
     input  logic [31:0] S2,
-    input  logic [3:0]  OpCode,
+    input  logic [3:0]  ControlUnit,
     output logic [31:0] OUT
 );
 
     always @(*) begin
-        case(OpCode)
+        case(ControlUnit)
             4'b0000: OUT = S1 + S2;                                		// ADD
             4'b1000: OUT = S1 - S2;                                		// SUB
             4'b0001: OUT = S1 << S2[4:0];                          		// SLL

@@ -1,28 +1,67 @@
-module processor(
-	input[31:0] S1,
-	input[31:0] S2,
-	input[3:0] OpCode,
-	output[31:0] OUT
+module processor (
+    input  logic clk,
+    input  logic reset
 );
+    // PC
+    logic [31:0] pc;
+    ProgramCounter PC_inst (
+        .clk(clk),
+        .reset(reset),
+        .pc(pc)
+    );
 
-	wire [31:0] ALUIN1;
-	wire [31:0] ALUIN2;
-	
-	assign ALUIN1 = S1;
-	assign ALUIN2 = S2;
-	always @(*) begin
-		case(OpCode)
-		4'b0000: OUT = (ALUIN1 + ALUIN2);
-		4'b0001: OUT = (ALUIN1 << ALUIN2);
-		4'b0010: OUT = ($signed(ALUIN1) < $signed(ALUIN2));
-		4'b0011: OUT = (ALUIN1 > ALUIN2);
-		4'b0100: OUT = (ALUIN1 ^ ALUIN2);
-		4'b0101: OUT = (ALUIN1 >> ALUIN2);
-		4'b0110: OUT = (ALUIN1 | ALUIN2);
-		4'b0111: OUT = (ALUIN1 & ALUIN2);
-		4'b1000: OUT = (ALUIN1 - ALUIN2);
-		4'b1101: OUT = (ALUIN1 >>> ALUIN2);
-		default: OUT = 32'b0;
-		endcase
-	end
+    // Instruction memory
+    logic [31:0] instruction;
+    InstructionMemory IMEM (
+        .pc(pc),
+        .instruction(instruction)
+    );
+
+    // Decode instruction
+    logic [6:0] opcode;
+    logic [4:0] rd;
+    logic [2:0] funct3;
+    logic [4:0] rs1;
+    logic [4:0] rs2;
+    logic [6:0] funct7;
+
+    assign opcode = instruction[6:0];
+    assign rd     = instruction[11:7];
+    assign funct3 = instruction[14:12];
+    assign rs1    = instruction[19:15];
+    assign rs2    = instruction[24:20];
+    assign funct7 = instruction[31:25];
+
+
+    // Control unit
+    logic [3:0] alu_ctrl;
+    ControlUnit CU (
+        .opcode(opcode),
+        .funct3(funct3),
+        .funct7(funct7),
+        .ALUctrl(alu_ctrl)
+    );
+
+    // Register file
+    logic [31:0] reg_data1, reg_data2, alu_result;
+    RegisterUnit RF (
+        .clk(clk),
+        .reset(reset),
+        .RegWrite(1'b1),       // always write for now
+        .rs1(rs1),
+        .rs2(rs2),
+        .rd(rd),
+        .WriteData(alu_result),
+        .ReadData1(reg_data1),
+        .ReadData2(reg_data2)
+    );
+
+    // ALU
+    ALU ALU_inst (
+        .S1(reg_data1),
+        .S2(reg_data2),
+        .ControlUnit(alu_ctrl),
+        .OUT(alu_result)
+    );
+
 endmodule

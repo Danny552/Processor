@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processor
-Tue Sep 30 22:41:25 2025
+Fri Oct  3 16:20:29 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -14,7 +14,7 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+  9. Port Connectivity Checks: "RegisterUnit:RF"
  10. Post-Synthesis Netlist Statistics for Top Partition
  11. Elapsed Time Per Partition
  12. Analysis & Synthesis Messages
@@ -44,14 +44,14 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Sep 30 22:41:25 2025           ;
+; Analysis & Synthesis Status     ; Successful - Fri Oct  3 16:20:29 2025           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; processor                                       ;
 ; Top-level Entity Name           ; processor                                       ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
 ; Total registers                 ; 0                                               ;
-; Total pins                      ; 100                                             ;
+; Total pins                      ; 2                                               ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
 ; Total DSP Blocks                ; 0                                               ;
@@ -167,40 +167,45 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                          ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                      ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
-; processor.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
+; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ALU.sv               ;         ;
+; processor.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv         ;         ;
+; ProgramCounter.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv    ;         ;
+; RegisterUnit.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/RegisterUnit.sv      ;         ;
+; InstructionMemory.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv ;         ;
+; ControlUnit.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv       ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 264         ;
-;                                             ;             ;
-; Combinational ALUT usage for logic          ; 352         ;
-;     -- 7 input functions                    ; 11          ;
-;     -- 6 input functions                    ; 165         ;
-;     -- 5 input functions                    ; 48          ;
-;     -- 4 input functions                    ; 60          ;
-;     -- <=3 input functions                  ; 68          ;
-;                                             ;             ;
-; Dedicated logic registers                   ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 100         ;
-;                                             ;             ;
-; Total DSP Blocks                            ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; S2[0]~input ;
-; Maximum fan-out                             ; 69          ;
-; Total fan-out                               ; 1890        ;
-; Average fan-out                             ; 3.42        ;
-+---------------------------------------------+-------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimate of Logic utilization (ALMs needed) ; 0     ;
+;                                             ;       ;
+; Combinational ALUT usage for logic          ; 0     ;
+;     -- 7 input functions                    ; 0     ;
+;     -- 6 input functions                    ; 0     ;
+;     -- 5 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 0     ;
+;     -- <=3 input functions                  ; 0     ;
+;                                             ;       ;
+; Dedicated logic registers                   ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 2     ;
+;                                             ;       ;
+; Total DSP Blocks                            ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 2     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -208,7 +213,7 @@ on the Quartus Prime software download page.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |processor                 ; 352 (352)           ; 0 (0)                     ; 0                 ; 0          ; 100  ; 0            ; |processor          ; processor   ; work         ;
+; |processor                 ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 2    ; 0            ; |processor          ; processor   ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -228,46 +233,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |processor|ShiftLeft0      ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |processor|ShiftRight0     ;
-; 4:1                ; 50 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |processor|ShiftRight0     ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |processor|ShiftRight0     ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |processor|ShiftLeft0      ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |processor|ShiftRight0     ;
-; 22:1               ; 12 bits   ; 168 LEs       ; 132 LEs              ; 36 LEs                 ; No         ; |processor|Mux5            ;
-; 22:1               ; 12 bits   ; 168 LEs       ; 132 LEs              ; 36 LEs                 ; No         ; |processor|Mux16           ;
-; 25:1               ; 4 bits    ; 64 LEs        ; 52 LEs               ; 12 LEs                 ; No         ; |processor|Mux3            ;
-; 25:1               ; 3 bits    ; 48 LEs        ; 39 LEs               ; 9 LEs                  ; No         ; |processor|Mux30           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++---------------------------------------------+
+; Port Connectivity Checks: "RegisterUnit:RF" ;
++----------+-------+----------+---------------+
+; Port     ; Type  ; Severity ; Details       ;
++----------+-------+----------+---------------+
+; RegWrite ; Input ; Info     ; Stuck at VCC  ;
++----------+-------+----------+---------------+
 
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 352                         ;
-;     arith             ; 33                          ;
-;         1 data inputs ; 1                           ;
-;         3 data inputs ; 32                          ;
-;     extend            ; 11                          ;
-;         7 data inputs ; 11                          ;
-;     normal            ; 308                         ;
-;         2 data inputs ; 23                          ;
-;         3 data inputs ; 12                          ;
-;         4 data inputs ; 60                          ;
-;         5 data inputs ; 48                          ;
-;         6 data inputs ; 165                         ;
-; boundary_port         ; 100                         ;
-;                       ;                             ;
-; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 5.75                        ;
-+-----------------------+-----------------------------+
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 2                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
 
 
 +-------------------------------+
@@ -275,7 +259,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -285,7 +269,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Tue Sep 30 22:41:10 2025
+    Info: Processing started: Fri Oct  3 16:20:18 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -293,18 +277,38 @@ Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
     Info (12023): Found entity 1: ALU File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file processor.sv
     Info (12023): Found entity 1: processor File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file programcounter.sv
+    Info (12023): Found entity 1: ProgramCounter File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file registerunit.sv
+    Info (12023): Found entity 1: RegisterUnit File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/RegisterUnit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file instructionmemory.sv
+    Info (12023): Found entity 1: InstructionMemory File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file controlunit.sv
+    Info (12023): Found entity 1: ControlUnit File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv Line: 1
 Info (12127): Elaborating entity "processor" for the top level hierarchy
-Info (286030): Timing-Driven Synthesis is running
+Info (12128): Elaborating entity "ProgramCounter" for hierarchy "ProgramCounter:PC_inst" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 11
+Warning (10240): Verilog HDL Always Construct warning at ProgramCounter.sv(7): inferring latch(es) for variable "pc", which holds its previous value in one or more paths through the always construct File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv Line: 7
+Info (10041): Inferred latch for "pc[0]" at ProgramCounter.sv(7) File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv Line: 7
+Info (10041): Inferred latch for "pc[1]" at ProgramCounter.sv(7) File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv Line: 7
+Info (12128): Elaborating entity "InstructionMemory" for hierarchy "InstructionMemory:IMEM" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 18
+Warning (10030): Net "mem.data_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv Line: 5
+Warning (10030): Net "mem.waddr_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv Line: 5
+Warning (10030): Net "mem.we_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv Line: 5
+Info (12128): Elaborating entity "ControlUnit" for hierarchy "ControlUnit:CU" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 43
+Info (12128): Elaborating entity "RegisterUnit" for hierarchy "RegisterUnit:RF" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 57
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ALU_inst" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 65
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 452 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 68 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 352 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4865 megabytes
-    Info: Processing ended: Tue Sep 30 22:41:25 2025
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:31
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 2
+    Warning (15610): No output dependent on input pin "reset" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 4
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4820 megabytes
+    Info: Processing ended: Fri Oct  3 16:20:29 2025
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:22
 
 

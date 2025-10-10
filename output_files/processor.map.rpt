@@ -1,5 +1,9 @@
 Analysis & Synthesis report for processor
+<<<<<<< Updated upstream
 Fri Oct  3 18:26:52 2025
+=======
+Fri Oct 10 12:34:36 2025
+>>>>>>> Stashed changes
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -13,6 +17,7 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
+<<<<<<< Updated upstream
   8. Registers Removed During Synthesis
   9. General Register Statistics
  10. Port Connectivity Checks: "RegisterUnit:RF"
@@ -20,6 +25,13 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
  12. Post-Synthesis Netlist Statistics for Top Partition
  13. Elapsed Time Per Partition
  14. Analysis & Synthesis Messages
+=======
+  8. General Register Statistics
+  9. Port Connectivity Checks: "ControlUnit:CU"
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
+>>>>>>> Stashed changes
 
 
 
@@ -46,7 +58,11 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
+<<<<<<< Updated upstream
 ; Analysis & Synthesis Status     ; Successful - Fri Oct  3 18:26:52 2025           ;
+=======
+; Analysis & Synthesis Status     ; Successful - Fri Oct 10 12:34:36 2025           ;
+>>>>>>> Stashed changes
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; processor                                       ;
 ; Top-level Entity Name           ; processor                                       ;
@@ -170,6 +186,7 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 
 
+<<<<<<< Updated upstream
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                                       ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
@@ -183,6 +200,21 @@ on the Quartus Prime software download page.
 ; ControlUnit.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/jucac/Desktop/Quar-Pro/Processor/ControlUnit.sv       ;         ;
 ; hexa.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/jucac/Desktop/Quar-Pro/Processor/hexa.sv              ;         ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
+=======
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
+; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ALU.sv               ;         ;
+; processor.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv         ;         ;
+; ProgramCounter.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv    ;         ;
+; RegisterUnit.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/RegisterUnit.sv      ;         ;
+; InstructionMemory.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv ;         ;
+; ControlUnit.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv       ;         ;
+; ImmGen.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ImmGen.sv            ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
+>>>>>>> Stashed changes
 
 
 +---------------------------------------------------------+
@@ -250,13 +282,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------+
-; Port Connectivity Checks: "RegisterUnit:RF" ;
-+----------+-------+----------+---------------+
-; Port     ; Type  ; Severity ; Details       ;
-+----------+-------+----------+---------------+
-; RegWrite ; Input ; Info     ; Stuck at VCC  ;
-+----------+-------+----------+---------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ControlUnit:CU"                                                                         ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; MemRead  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; MemWrite ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; MemToReg ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -307,7 +341,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+<<<<<<< Updated upstream
     Info: Processing started: Fri Oct  3 18:26:39 2025
+=======
+    Info: Processing started: Fri Oct 10 12:34:24 2025
+>>>>>>> Stashed changes
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -322,6 +360,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file registe
 Info (12021): Found 1 design units, including 1 entities, in source file instructionmemory.sv
     Info (12023): Found entity 1: InstructionMemory File: C:/Users/jucac/Desktop/Quar-Pro/Processor/InstructionMemory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file controlunit.sv
+<<<<<<< Updated upstream
     Info (12023): Found entity 1: ControlUnit File: C:/Users/jucac/Desktop/Quar-Pro/Processor/ControlUnit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file hexa.sv
     Info (12023): Found entity 1: hexa File: C:/Users/jucac/Desktop/Quar-Pro/Processor/hexa.sv Line: 1
@@ -380,10 +419,37 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "display6[6]" is stuck at VCC File: C:/Users/jucac/Desktop/Quar-Pro/Processor/processor.sv Line: 5
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 22 registers lost all their fanouts during netlist optimizations.
+=======
+    Info (12023): Found entity 1: ControlUnit File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file immgen.sv
+    Info (12023): Found entity 1: ImmGen File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ImmGen.sv Line: 1
+Info (12127): Elaborating entity "processor" for the top level hierarchy
+Info (12128): Elaborating entity "ProgramCounter" for hierarchy "ProgramCounter:PC_inst" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 13
+Warning (10240): Verilog HDL Always Construct warning at ProgramCounter.sv(7): inferring latch(es) for variable "pc", which holds its previous value in one or more paths through the always construct File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv Line: 7
+Info (10041): Inferred latch for "pc[0]" at ProgramCounter.sv(7) File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv Line: 7
+Info (10041): Inferred latch for "pc[1]" at ProgramCounter.sv(7) File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv Line: 7
+Info (12128): Elaborating entity "InstructionMemory" for hierarchy "InstructionMemory:IMEM" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 22
+Warning (10030): Net "mem.data_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv Line: 5
+Warning (10030): Net "mem.waddr_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv Line: 5
+Warning (10030): Net "mem.we_a" at InstructionMemory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv Line: 5
+Info (12128): Elaborating entity "ControlUnit" for hierarchy "ControlUnit:CU" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 61
+Warning (10034): Output port "ALUSrc" at ControlUnit.sv(6) has no driver File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv Line: 6
+Warning (10034): Output port "RegWrite" at ControlUnit.sv(7) has no driver File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv Line: 7
+Warning (10034): Output port "MemRead" at ControlUnit.sv(8) has no driver File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv Line: 8
+Warning (10034): Output port "MemWrite" at ControlUnit.sv(9) has no driver File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv Line: 9
+Warning (10034): Output port "MemToReg" at ControlUnit.sv(11) has no driver File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv Line: 11
+Info (12128): Elaborating entity "RegisterUnit" for hierarchy "RegisterUnit:RF" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 79
+Info (12128): Elaborating entity "ImmGen" for hierarchy "ImmGen:immGen_inst" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 88
+Warning (10036): Verilog HDL or VHDL warning at ImmGen.sv(7): object "funct7" assigned a value but never read File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ImmGen.sv Line: 7
+Warning (10272): Verilog HDL Case Statement warning at ImmGen.sv(26): case item expression covers a value already covered by a previous case item File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ImmGen.sv Line: 26
+Warning (10829): SystemVerilog warning at ImmGen.sv(14): unique case statement has overlapping case items File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ImmGen.sv Line: 14
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ALU_inst" File: C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv Line: 105
+>>>>>>> Stashed changes
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 56 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
+<<<<<<< Updated upstream
     Info (21059): Implemented 42 output pins
     Info (21061): Implemented 12 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 45 warnings
@@ -391,5 +457,13 @@ Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 45 warnings
     Info: Processing ended: Fri Oct  3 18:26:52 2025
     Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:36
+=======
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4820 megabytes
+    Info: Processing ended: Fri Oct 10 12:34:36 2025
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:26
+>>>>>>> Stashed changes
 
 

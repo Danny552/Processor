@@ -1,5 +1,9 @@
 EDA Netlist Writer report for processor
+<<<<<<< Updated upstream
 Fri Oct  3 18:28:18 2025
+=======
+Fri Oct 10 12:35:20 2025
+>>>>>>> Stashed changes
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -37,7 +41,11 @@ on the Quartus Prime software download page.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
+<<<<<<< Updated upstream
 ; EDA Netlist Writer Status ; Successful - Fri Oct  3 18:28:18 2025 ;
+=======
+; EDA Netlist Writer Status ; Successful - Fri Oct 10 12:35:20 2025 ;
+>>>>>>> Stashed changes
 ; Revision Name             ; processor                             ;
 ; Top-level Entity Name     ; processor                             ;
 ; Family                    ; Cyclone V                             ;
@@ -81,14 +89,25 @@ on the Quartus Prime software download page.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+<<<<<<< Updated upstream
     Info: Processing started: Fri Oct  3 18:28:17 2025
+=======
+    Info: Processing started: Fri Oct 10 12:35:19 2025
+>>>>>>> Stashed changes
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off processor -c processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file processor.svo in folder "C:/Users/jucac/Desktop/Quar-Pro/Processor/simulation/questa/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+<<<<<<< Updated upstream
     Info: Peak virtual memory: 4758 megabytes
     Info: Processing ended: Fri Oct  3 18:28:19 2025
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
+=======
+    Info: Peak virtual memory: 4739 megabytes
+    Info: Processing ended: Fri Oct 10 12:35:22 2025
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
+>>>>>>> Stashed changes
 
 

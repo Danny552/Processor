@@ -1,5 +1,9 @@
 Timing Analyzer report for processor
+<<<<<<< Updated upstream
 Fri Oct  3 18:28:15 2025
+=======
+Fri Oct 10 12:35:18 2025
+>>>>>>> Stashed changes
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -100,8 +104,13 @@ on the Quartus Prime software download page.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
+<<<<<<< Updated upstream
 ; Average used               ; 1.06        ;
 ; Maximum used               ; 16          ;
+=======
+; Average used               ; 1.02        ;
+; Maximum used               ; 8           ;
+>>>>>>> Stashed changes
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
@@ -702,7 +711,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+<<<<<<< Updated upstream
     Info: Processing started: Fri Oct  3 18:28:08 2025
+=======
+    Info: Processing started: Fri Oct 10 12:35:14 2025
+>>>>>>> Stashed changes
 Info: Command: quartus_sta processor -c processor
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -794,9 +807,16 @@ Info (332146): Worst-case minimum pulse width slack is -0.655
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
+<<<<<<< Updated upstream
     Info: Peak virtual memory: 5398 megabytes
     Info: Processing ended: Fri Oct  3 18:28:15 2025
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:06
+=======
+    Info: Peak virtual memory: 5110 megabytes
+    Info: Processing ended: Fri Oct 10 12:35:18 2025
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+>>>>>>> Stashed changes
 
 

@@ -1,5 +1,9 @@
 Flow report for processor
+<<<<<<< Updated upstream
 Fri Oct  3 18:28:18 2025
+=======
+Fri Oct 10 12:35:20 2025
+>>>>>>> Stashed changes
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -41,7 +45,11 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
+<<<<<<< Updated upstream
 ; Flow Status                     ; Successful - Fri Oct  3 18:28:18 2025           ;
+=======
+; Flow Status                     ; Successful - Fri Oct 10 12:35:20 2025           ;
+>>>>>>> Stashed changes
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; processor                                       ;
 ; Top-level Entity Name           ; processor                                       ;
@@ -68,7 +76,11 @@ on the Quartus Prime software download page.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
+<<<<<<< Updated upstream
 ; Start date & time ; 10/03/2025 18:26:40 ;
+=======
+; Start date & time ; 10/10/2025 12:34:25 ;
+>>>>>>> Stashed changes
 ; Main task         ; Compilation         ;
 ; Revision Name     ; processor           ;
 +-------------------+---------------------+
@@ -79,7 +91,11 @@ on the Quartus Prime software download page.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+<<<<<<< Updated upstream
 ; COMPILER_SIGNATURE_ID               ; 196400806773075.175953399916616        ; --            ; --          ; --                                ;
+=======
+; COMPILER_SIGNATURE_ID               ; 178482203214163.176011766410872        ; --            ; --          ; --                                ;
+>>>>>>> Stashed changes
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -103,12 +119,21 @@ on the Quartus Prime software download page.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
+<<<<<<< Updated upstream
 ; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4879 MB             ; 00:00:36                           ;
 ; Fitter               ; 00:01:05     ; 1.0                     ; 8012 MB             ; 00:05:13                           ;
 ; Assembler            ; 00:00:07     ; 1.0                     ; 5224 MB             ; 00:00:07                           ;
 ; Timing Analyzer      ; 00:00:07     ; 1.1                     ; 5398 MB             ; 00:00:06                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4758 MB             ; 00:00:02                           ;
 ; Total                ; 00:01:33     ; --                      ; --                  ; 00:06:04                           ;
+=======
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4808 MB             ; 00:00:26                           ;
+; Fitter               ; 00:00:29     ; 1.0                     ; 6613 MB             ; 00:01:11                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 4987 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 5110 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4739 MB             ; 00:00:01                           ;
+; Total                ; 00:00:51     ; --                      ; --                  ; 00:01:44                           ;
+>>>>>>> Stashed changes
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

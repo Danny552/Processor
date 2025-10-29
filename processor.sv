@@ -49,6 +49,19 @@ module processor (
 			.seg6(display6),
 			.binary(rd)
 	 );
+	 
+vga_display vga_disp (
+    .clk_50MHz(CLOCK_50),
+    .reset(reset),
+    .pc(PC_out),
+    .instr_mem(instruction_memory),
+    .data_mem(data_memory),
+    .VGA_R(VGA_R),
+    .VGA_G(VGA_G),
+    .VGA_B(VGA_B),
+    .VGA_HS(VGA_HS),
+    .VGA_VS(VGA_VS)
+);
 
     // Control unit
 =======

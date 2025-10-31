@@ -38,29 +38,12 @@ module processor (
     assign rs1    = instruction[19:15];
     assign rs2    = instruction[24:20];
     assign funct7 = instruction[31:25];
-
-<<<<<<< Updated upstream
-	 hexa show_display(
-			.seg1(display1),
-			.seg2(display2),
-			.seg3(display3),
-			.seg4(display4),
-			.seg5(display5),
-			.seg6(display6),
-			.binary(rd)
-	 );
-
-    // Control unit
-=======
-    // =========================
-    // Control Unit
-    // =========================
->>>>>>> Stashed changes
+	 
     logic [3:0] alu_ctrl;
     logic       ALUSrc;      // select immediate or register as ALU input2
     logic       RegWrite;    // enable register write
     logic       MemRead;     // for loads
-    logic       MemWrite;    // for stores (not yet used)
+    logic       MemWrite;    // for stores
     logic       MemToReg;    // select memory or ALU result for reg write (not yet used)
 
     ControlUnit CU (
@@ -118,11 +101,22 @@ module processor (
         .ControlUnit(alu_ctrl),
         .OUT(alu_result)
     );
+    // =========================
+    // Data Memory
+    // =========================
+    logic [31:0] mem_read_data;
+    DataMemory DMEM (
+        .clk(clk),
+        .MemRead(MemRead),
+        .MemWrite(MemWrite),
+        .addr(alu_result),
+        .WriteData(reg_data2),
+        .ReadData(mem_read_data)
+    );
 
     // =========================
-    // Write-back selection
-    // (For now: only ALU result; memory stage can be added later)
+    // Write-back MUX
     // =========================
-    assign WriteData = alu_result;
+    assign WriteData = (MemToReg) ? mem_read_data : alu_result;
 
 endmodule

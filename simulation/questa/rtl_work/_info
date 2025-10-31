@@ -1,0 +1,242 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/simulation/questa
+vALU
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1761792302
+!i10b 1
+!s100 kEUSMB`7SA@<m6>Ce9RzX3
+IN=Rn1kf4gkQYa>9CFd0bY3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 ALU_sv_unit
+S1
+R0
+w1759526159
+8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ALU.sv
+FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ALU.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1761792302.000000
+!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ALU.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor
+Z8 tCvgOpt 0
+n@a@l@u
+vControlUnit
+R1
+R2
+!i10b 1
+!s100 3F4<8Nl^dhzF6J5?m?9f]1
+IY>iI]bX5lO70`Y3E=f?^e3
+R3
+!s105 ControlUnit_sv_unit
+S1
+R0
+w1761775875
+8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv
+FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv|
+!i113 1
+R6
+R7
+R8
+n@control@unit
+vDataMemory
+R1
+Z9 !s110 1761792303
+!i10b 1
+!s100 @D@h2ZTfWDNJ4Y3=8V[233
+I5C^3ILQR_H10Z<=f5h5HG1
+R3
+!s105 DataMemory_sv_unit
+S1
+R0
+w1761775628
+8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/DataMemory.sv
+FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/DataMemory.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z10 !s108 1761792303.000000
+!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/DataMemory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/DataMemory.sv|
+!i113 1
+R6
+R7
+R8
+n@data@memory
+vImmGen
+R1
+R9
+!i10b 1
+!s100 9hO6BV@Ih3`MbCFf2z2`13
+In5d?2`K47gEG=]aaKG@X32
+R3
+!s105 ImmGen_sv_unit
+S1
+R0
+w1761775580
+8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ImmGen.sv
+FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ImmGen.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ImmGen.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ImmGen.sv|
+!i113 1
+R6
+R7
+R8
+n@imm@gen
+vInstructionMemory
+R1
+R9
+!i10b 1
+!s100 ZG6OJMMig;d]N7Wn56NNG0
+I]6E94<96k<i]zno9N`B1@3
+R3
+!s105 InstructionMemory_sv_unit
+S1
+R0
+w1761775589
+8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv
+FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv|
+!i113 1
+R6
+R7
+R8
+n@instruction@memory
+vprocessor
+R1
+R2
+!i10b 1
+!s100 lCF_aknP<n^MAj_CBKPiM2
+Ik1@Dkc?RG37li>3>ll:]^3
+R3
+!s105 processor_sv_unit
+S1
+R0
+w1761775911
+8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv
+FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv|
+!i113 1
+R6
+R7
+R8
+vprocessor_tb
+R1
+R9
+!i10b 1
+!s100 5]6OKW<BKLT;VUUD;4h^M1
+Ifd6>e?n5PBZHVJ@7N3C3R2
+R3
+!s105 processor_tb_sv_unit
+S1
+R0
+w1761792178
+8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor_tb.sv
+FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor_tb.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor_tb.sv|
+!i113 1
+R6
+R7
+R8
+vProgramCounter
+R1
+R2
+!i10b 1
+!s100 8lfoNnm:I`YLW3eW:hHG50
+IPCz6kTnU<5hf`Rh=F0iZI3
+R3
+!s105 ProgramCounter_sv_unit
+S1
+R0
+w1761778157
+8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv
+FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv|
+!i113 1
+R6
+R7
+R8
+n@program@counter
+vRegisterUnit
+R1
+R2
+!i10b 1
+!s100 ca9Jo<BDa[TSHGVY0CnH@3
+I2mR7FGXEj<SA1jK4o];mo3
+R3
+!s105 RegisterUnit_sv_unit
+S1
+R0
+w1760118046
+8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/RegisterUnit.sv
+FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/RegisterUnit.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/RegisterUnit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/RegisterUnit.sv|
+!i113 1
+R6
+R7
+R8
+n@register@unit

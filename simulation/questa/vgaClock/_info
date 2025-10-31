@@ -1,0 +1,101 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/simulation/questa
+valtera_up_avalon_reset_from_locked_signal
+!s110 1761954693
+!i10b 1
+!s100 21LY9FTb`4C4iU[D9:fdD3
+IN?UiQ`_Re[6^@7B7h1X4`0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z2 w1761954144
+8c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/altera_up_avalon_reset_from_locked_signal.v
+Fc:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/altera_up_avalon_reset_from_locked_signal.v
+L0 28
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1761954693.000000
+!s107 c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/altera_up_avalon_reset_from_locked_signal.v|
+!s90 -reportprogress|300|-vlog01compat|-work|vgaClock|+incdir+c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules|c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/altera_up_avalon_reset_from_locked_signal.v|
+!i113 1
+Z5 o-vlog01compat -work vgaClock
+Z6 !s92 -vlog01compat -work vgaClock +incdir+c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules
+Z7 tCvgOpt 0
+vvgaClock
+Z8 !s110 1761954694
+!i10b 1
+!s100 Bn;S5HSE`2=Q]^lV@SPG<0
+I>M62YI]OJ=EVXl7M2i8J23
+R1
+R0
+w1761954143
+8c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/vgaclock.v
+Fc:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/vgaclock.v
+L0 6
+R3
+r1
+!s85 0
+31
+Z9 !s108 1761954694.000000
+!s107 c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/vgaclock.v|
+!s90 -reportprogress|300|-vlog01compat|-work|vgaClock|+incdir+c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock|c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/vgaclock.v|
+!i113 1
+R5
+!s92 -vlog01compat -work vgaClock +incdir+c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock
+R7
+nvga@clock
+vvgaClock_video_pll_0
+R8
+!i10b 1
+!s100 M4Re0^z_UkLFa?4ah@`MZ0
+I4cEzD?BX4O>AC5oCNZ4>=2
+R1
+R0
+R2
+8c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0.v
+Fc:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+!s107 c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|vgaClock|+incdir+c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules|c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0.v|
+!i113 1
+R5
+R6
+R7
+nvga@clock_video_pll_0
+vvgaClock_video_pll_0_video_pll
+R8
+!i10b 1
+!s100 7IR[?MnL?j:D3C]B4NehG0
+IV8_l3z;INHK;2`BA^jo5j1
+R1
+R0
+R2
+8c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v
+Fc:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v
+L0 2
+R3
+r1
+!s85 0
+31
+R9
+!s107 c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|vgaClock|+incdir+c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules|c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v|
+!i113 1
+R5
+R6
+R7
+nvga@clock_video_pll_0_video_pll

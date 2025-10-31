@@ -1,7 +1,19 @@
 module processor (
     input logic clk,
 	 input logic reset,
-	 output wire [6:0] display1, display2, display3, display4, display5, display6 
+	 input clock,                 // 50 MHz clock
+	 input sw0,                   // reset
+	 input sw1,
+	 input sw2,
+	 input sw3,
+	 input sw4,
+	 input sw5,
+	 output reg [7:0] vga_red,
+	 output reg [7:0] vga_green,
+	 output reg [7:0] vga_blue,
+	 output vga_hsync,
+	 output vga_vsync,
+	 output vga_clock
 );
     // =========================
     // Program Counter
@@ -63,7 +75,7 @@ module processor (
     // =========================
     logic [31:0] reg_data1, reg_data2;
     logic [31:0] WriteData;
-
+	 
     RegisterUnit RF (
         .clk(clk),
         .reset(reset),
@@ -118,5 +130,21 @@ module processor (
     // Write-back MUX
     // =========================
     assign WriteData = (MemToReg) ? mem_read_data : alu_result;
-
+	 
+	 color color_inst(
+	  .clock(clock),                 // 50 MHz clock
+	  .sw0(sw0),                   // reset
+	  .sw1(sw1),
+	  .sw2(sw2),
+	  .sw3(sw3),
+	  .sw4(sw4),
+	  .sw5(sw5),
+	  .vga_red(vga_red),
+	  .vga_green(vga_green),
+	  .vga_blue(vga_blue),
+	  .vga_hsync(vga_hsync),
+	  .vga_vsync(vga_vsync),
+	  .vga_clock(vga_clock)
+	);
+	 
 endmodule

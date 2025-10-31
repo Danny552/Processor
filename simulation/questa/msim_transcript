@@ -10,101 +10,178 @@
 # Copying C:/intelFPGA/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor {C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ALU.sv}
+# vlog -vlog01compat -work work +incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor {C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/font_renderer.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:45:02 on Oct 29,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor" C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ALU.sv 
+# Start time: 18:51:33 on Oct 31,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor" C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/font_renderer.v 
+# -- Compiling module font_renderer
+# 
+# Top level modules:
+# 	font_renderer
+# End time: 18:51:33 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor {C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/font_rom.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:51:33 on Oct 31,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor" C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/font_rom.v 
+# -- Compiling module font_rom
+# 
+# Top level modules:
+# 	font_rom
+# End time: 18:51:33 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlib vgaClock
+# vmap vgaClock vgaClock
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap vgaClock vgaClock 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work vgaClock +incdir+c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules {c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/altera_up_avalon_reset_from_locked_signal.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:51:33 on Oct 31,2025
+# vlog -reportprogress 300 -vlog01compat -work vgaClock "+incdir+c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules" c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/altera_up_avalon_reset_from_locked_signal.v 
+# -- Compiling module altera_up_avalon_reset_from_locked_signal
+# 
+# Top level modules:
+# 	altera_up_avalon_reset_from_locked_signal
+# End time: 18:51:33 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work vgaClock +incdir+c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules {c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:51:33 on Oct 31,2025
+# vlog -reportprogress 300 -vlog01compat -work vgaClock "+incdir+c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules" c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0.v 
+# -- Compiling module vgaClock_video_pll_0
+# 
+# Top level modules:
+# 	vgaClock_video_pll_0
+# End time: 18:51:34 on Oct 31,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work vgaClock +incdir+c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules {c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:51:34 on Oct 31,2025
+# vlog -reportprogress 300 -vlog01compat -work vgaClock "+incdir+c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules" c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v 
+# -- Compiling module vgaClock_video_pll_0_video_pll
+# 
+# Top level modules:
+# 	vgaClock_video_pll_0_video_pll
+# End time: 18:51:34 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work vgaClock +incdir+c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock {c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/vgaclock.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:51:34 on Oct 31,2025
+# vlog -reportprogress 300 -vlog01compat -work vgaClock "+incdir+c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock" c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/vgaclock.v 
+# -- Compiling module vgaClock
+# 
+# Top level modules:
+# 	vgaClock
+# End time: 18:51:34 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor {C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:51:34 on Oct 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor" C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 21:45:02 on Oct 29,2025, Elapsed time: 0:00:00
+# End time: 18:51:34 on Oct 31,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor {C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv}
+# vlog -sv -work work +incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor {C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:45:02 on Oct 29,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor" C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv 
+# Start time: 18:51:34 on Oct 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor" C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor.sv 
 # -- Compiling module processor
 # 
 # Top level modules:
 # 	processor
-# End time: 21:45:02 on Oct 29,2025, Elapsed time: 0:00:00
+# End time: 18:51:34 on Oct 31,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor {C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv}
+# vlog -sv -work work +incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor {C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ProgramCounter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:45:02 on Oct 29,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor" C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv 
+# Start time: 18:51:34 on Oct 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor" C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ProgramCounter.sv 
 # -- Compiling module ProgramCounter
 # 
 # Top level modules:
 # 	ProgramCounter
-# End time: 21:45:02 on Oct 29,2025, Elapsed time: 0:00:00
+# End time: 18:51:34 on Oct 31,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor {C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/RegisterUnit.sv}
+# vlog -sv -work work +incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor {C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/RegisterUnit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:45:02 on Oct 29,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor" C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/RegisterUnit.sv 
+# Start time: 18:51:34 on Oct 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor" C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/RegisterUnit.sv 
 # -- Compiling module RegisterUnit
 # 
 # Top level modules:
 # 	RegisterUnit
-# End time: 21:45:02 on Oct 29,2025, Elapsed time: 0:00:00
+# End time: 18:51:34 on Oct 31,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor {C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv}
+# vlog -sv -work work +incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor {C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ControlUnit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:45:02 on Oct 29,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor" C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv 
+# Start time: 18:51:34 on Oct 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor" C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ControlUnit.sv 
 # -- Compiling module ControlUnit
 # 
 # Top level modules:
 # 	ControlUnit
-# End time: 21:45:02 on Oct 29,2025, Elapsed time: 0:00:00
+# End time: 18:51:34 on Oct 31,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor {C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ImmGen.sv}
+# vlog -sv -work work +incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor {C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ImmGen.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:45:02 on Oct 29,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor" C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ImmGen.sv 
+# Start time: 18:51:34 on Oct 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor" C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ImmGen.sv 
 # -- Compiling module ImmGen
 # 
 # Top level modules:
 # 	ImmGen
-# End time: 21:45:03 on Oct 29,2025, Elapsed time: 0:00:01
+# End time: 18:51:34 on Oct 31,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor {C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv}
+# vlog -sv -work work +incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor {C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/color.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:45:03 on Oct 29,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor" C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv 
+# Start time: 18:51:34 on Oct 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor" C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/color.sv 
+# -- Compiling module color
+# -- Compiling module clock1280x800
+# -- Compiling module vga_controller_1280x800
+# 
+# Top level modules:
+# 	color
+# End time: 18:51:34 on Oct 31,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor {C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/InstructionMemory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:51:34 on Oct 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor" C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/InstructionMemory.sv 
 # -- Compiling module InstructionMemory
 # 
 # Top level modules:
 # 	InstructionMemory
-# End time: 21:45:03 on Oct 29,2025, Elapsed time: 0:00:00
+# End time: 18:51:34 on Oct 31,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor {C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/DataMemory.sv}
+# vlog -sv -work work +incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor {C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/DataMemory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:45:03 on Oct 29,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor" C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/DataMemory.sv 
+# Start time: 18:51:35 on Oct 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor" C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/DataMemory.sv 
 # -- Compiling module DataMemory
 # 
 # Top level modules:
 # 	DataMemory
-# End time: 21:45:03 on Oct 29,2025, Elapsed time: 0:00:00
+# End time: 18:51:35 on Oct 31,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor {C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor {C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:45:03 on Oct 29,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor" C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor_tb.sv 
+# Start time: 18:51:35 on Oct 31,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor" C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv 
 # -- Compiling module processor_tb
 # 
 # Top level modules:
 # 	processor_tb
-# End time: 21:45:03 on Oct 29,2025, Elapsed time: 0:00:00
+# End time: 18:51:35 on Oct 31,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  processor_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" processor_tb 
-# Start time: 21:45:03 on Oct 29,2025
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L vgaClock -voptargs="+acc"  processor_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L vgaClock -voptargs=""+acc"" processor_tb 
+# Start time: 18:51:36 on Oct 31,2025
 # Loading sv_std.std
 # Loading work.processor_tb
 # Loading work.processor
@@ -115,6 +192,58 @@
 # Loading work.ImmGen
 # Loading work.ALU
 # Loading work.DataMemory
+# Loading work.color
+# Loading work.clock1280x800
+# Loading vgaClock.vgaClock
+# Loading vgaClock.vgaClock_video_pll_0
+# Loading vgaClock.vgaClock_video_pll_0_video_pll
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.altera_pll
+# Loading vgaClock.altera_up_avalon_reset_from_locked_signal
+# Loading work.vga_controller_1280x800
+# Loading work.font_renderer
+# Loading work.font_rom
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_generic_pll_functions
+# Loading altera_lnsim_ver.generic_pll
+# ** Warning: (vsim-3017) C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv(17): [TFMPC] - Too few port connections. Expected 21, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /processor_tb/uut File: C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor.sv
+# ** Warning: (vsim-3722) C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv(17): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv(17): [TFMPC] - Missing connection for port 'sw0'.
+# ** Warning: (vsim-3722) C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv(17): [TFMPC] - Missing connection for port 'sw1'.
+# ** Warning: (vsim-3722) C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv(17): [TFMPC] - Missing connection for port 'sw2'.
+# ** Warning: (vsim-3722) C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv(17): [TFMPC] - Missing connection for port 'sw3'.
+# ** Warning: (vsim-3722) C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv(17): [TFMPC] - Missing connection for port 'sw4'.
+# ** Warning: (vsim-3722) C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv(17): [TFMPC] - Missing connection for port 'sw5'.
+# ** Warning: (vsim-3722) C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv(17): [TFMPC] - Missing connection for port 'vga_red'.
+# ** Warning: (vsim-3722) C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv(17): [TFMPC] - Missing connection for port 'vga_green'.
+# ** Warning: (vsim-3722) C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv(17): [TFMPC] - Missing connection for port 'vga_blue'.
+# ** Warning: (vsim-3722) C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv(17): [TFMPC] - Missing connection for port 'vga_hsync'.
+# ** Warning: (vsim-3722) C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv(17): [TFMPC] - Missing connection for port 'vga_vsync'.
+# ** Warning: (vsim-3722) C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv(17): [TFMPC] - Missing connection for port 'vga_clock'.
+# ** Warning: (vsim-3017) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Too few port connections. Expected 26, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /processor_tb/uut/color/vgaclock/clk/video_pll_0/video_pll/altera_pll_i File: /build/swbuild/SJ/nightly/19.1std/670/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'refclk1'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'phase_en'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'updn'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'cntsel'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'extswitch'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'adjpllin'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'cclk'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'phase_done'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'activeclk'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'phout'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'lvds_clk'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'loaden'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'extclk_out'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'cascade_out'.
+# ** Warning: (vsim-3722) c:/users/jucac/desktop/universidad/arquitectura/processor/db/ip/vgaclock/submodules/vgaclock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'zdbfbclk'.
 # 
 # add wave *
 # view structure
@@ -123,17 +252,25 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # ** Warning: (vsim-7) Failed to open readmem file "MemProgram/program.bin" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv(9)
+# No such file or directory. (errno = ENOENT)    : C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/InstructionMemory.sv(9)
 #    Time: 0 ps  Iteration: 0  Instance: /processor_tb/uut/IMEM
 # ** Warning: (vsim-7) Failed to open readmem file "MemProgram/memory.bin" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/DataMemory.sv(20)
+# No such file or directory. (errno = ENOENT)    : C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/DataMemory.sv(20)
 #    Time: 0 ps  Iteration: 0  Instance: /processor_tb/uut/DMEM
-# ** Note: $stop    : C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor_tb.sv(55)
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (processor_tb.uut.color.vgaclock.clk.video_pll_0.video_pll.altera_pll_i.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = processor_tb.uut.color.vgaclock.clk.video_pll_0.video_pll.altera_pll_i.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 1249.972 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 400.008960
+# Info: output_clock_low_period = 400.008960
+# ** Note: $stop    : C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv(55)
 #    Time: 100 us  Iteration: 0  Instance: /processor_tb
-# Break in Module processor_tb at C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor_tb.sv line 55
-# Break key hit
-# Break key hit
-# Break key hit
-# Break key hit
-# End time: 21:48:28 on Oct 29,2025, Elapsed time: 0:03:25
-# Errors: 0, Warnings: 2
+# Break in Module processor_tb at C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv line 55
+# End time: 18:52:51 on Oct 31,2025, Elapsed time: 0:01:15
+# Errors: 0, Warnings: 37

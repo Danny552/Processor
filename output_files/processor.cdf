@@ -4,9 +4,9 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Ign)
-		Device PartName(5CSEMA5) MfrSpec(OpMask(0));
+		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("C:/Users/jucac/Desktop/Quar-Pro/Processor/output_files/") File("processor.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/output_files/") File("processor.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

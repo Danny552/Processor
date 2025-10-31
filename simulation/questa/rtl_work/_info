@@ -7,236 +7,355 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/simulation/questa
+Z0 dC:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/simulation/questa
 vALU
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1761792302
+Z2 !s110 1761954694
 !i10b 1
 !s100 kEUSMB`7SA@<m6>Ce9RzX3
-IN=Rn1kf4gkQYa>9CFd0bY3
+Ic>iBXa@n]1E?TaG<XWQ4e1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 ALU_sv_unit
 S1
 R0
-w1759526159
-8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ALU.sv
-FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ALU.sv
+Z4 w1760126033
+8C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ALU.sv
+FC:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ALU.sv
 L0 1
-Z4 OV;L;10.5b;63
+Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1761792302.000000
-!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ALU.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ALU.sv|
+Z6 !s108 1761954694.000000
+!s107 C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor|C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ALU.sv|
 !i113 1
-Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor
-Z8 tCvgOpt 0
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor
+Z9 tCvgOpt 0
 n@a@l@u
+vclock1280x800
+R1
+R2
+!i10b 1
+!s100 Okaa48OcVNSMk4Sh0MIl?0
+IImW]JmW8k<Mlk1A==6@>63
+R3
+Z10 !s105 color_sv_unit
+S1
+R0
+Z11 w1761950938
+Z12 8C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/color.sv
+Z13 FC:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/color.sv
+L0 117
+R5
+r1
+!s85 0
+31
+R6
+Z14 !s107 C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/color.sv|
+Z15 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor|C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/color.sv|
+!i113 1
+R7
+R8
+R9
+vcolor
+R1
+R2
+!i10b 1
+!s100 97Bz`2<jT<HR8[3B8I<z01
+IcOnXbK0H=PNhAB:W_hdIn2
+R3
+R10
+S1
+R0
+R11
+R12
+R13
+L0 6
+R5
+r1
+!s85 0
+31
+R6
+R14
+R15
+!i113 1
+R7
+R8
+R9
 vControlUnit
 R1
 R2
 !i10b 1
 !s100 3F4<8Nl^dhzF6J5?m?9f]1
-IY>iI]bX5lO70`Y3E=f?^e3
+IUgCzjTUGiMhl02hCmQ]^n0
 R3
 !s105 ControlUnit_sv_unit
 S1
 R0
-w1761775875
-8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv
-FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv
+Z16 w1761945888
+8C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ControlUnit.sv
+FC:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ControlUnit.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ControlUnit.sv|
-!i113 1
 R6
+!s107 C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ControlUnit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor|C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ControlUnit.sv|
+!i113 1
 R7
 R8
+R9
 n@control@unit
 vDataMemory
 R1
-Z9 !s110 1761792303
+Z17 !s110 1761954695
 !i10b 1
 !s100 @D@h2ZTfWDNJ4Y3=8V[233
-I5C^3ILQR_H10Z<=f5h5HG1
+I^ZSnADU6`fRlHUAd@b0UK3
 R3
 !s105 DataMemory_sv_unit
 S1
 R0
-w1761775628
-8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/DataMemory.sv
-FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/DataMemory.sv
+R16
+8C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/DataMemory.sv
+FC:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/DataMemory.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-Z10 !s108 1761792303.000000
-!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/DataMemory.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/DataMemory.sv|
+Z18 !s108 1761954695.000000
+!s107 C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/DataMemory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor|C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/DataMemory.sv|
 !i113 1
-R6
 R7
 R8
+R9
 n@data@memory
+vfont_renderer
+Z19 !s110 1761954693
+!i10b 1
+!s100 _aV4:OAEPaB2`C8CFU1iK0
+I:oNhTFfA:WCQ`LSmiab[`1
+R3
+R0
+w1760741536
+8C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/font_renderer.v
+FC:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/font_renderer.v
+L0 6
+R5
+r1
+!s85 0
+31
+Z20 !s108 1761954693.000000
+!s107 C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/font_renderer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor|C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/font_renderer.v|
+!i113 1
+Z21 o-vlog01compat -work work
+Z22 !s92 -vlog01compat -work work +incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor
+R9
+vfont_rom
+R19
+!i10b 1
+!s100 TEEXGI3fAk=jVmWlGoeOF1
+ISG6Rn=SH@;leHiML9c``m0
+R3
+R0
+w1760741516
+8C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/font_rom.v
+FC:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/font_rom.v
+L0 6
+R5
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/font_rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor|C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/font_rom.v|
+!i113 1
+R21
+R22
+R9
 vImmGen
 R1
-R9
+R2
 !i10b 1
 !s100 9hO6BV@Ih3`MbCFf2z2`13
-In5d?2`K47gEG=]aaKG@X32
+IH;YN8V_>V9l9VP[C9a4;e0
 R3
 !s105 ImmGen_sv_unit
 S1
 R0
-w1761775580
-8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ImmGen.sv
-FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ImmGen.sv
+R16
+8C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ImmGen.sv
+FC:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ImmGen.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ImmGen.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ImmGen.sv|
-!i113 1
 R6
+!s107 C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ImmGen.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor|C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ImmGen.sv|
+!i113 1
 R7
 R8
+R9
 n@imm@gen
 vInstructionMemory
 R1
-R9
+R2
 !i10b 1
 !s100 ZG6OJMMig;d]N7Wn56NNG0
-I]6E94<96k<i]zno9N`B1@3
+I;QJ1;e^[4]CXdA45dkCnV1
 R3
 !s105 InstructionMemory_sv_unit
 S1
 R0
-w1761775589
-8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv
-FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv
+R16
+8C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/InstructionMemory.sv
+FC:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/InstructionMemory.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-R10
-!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/InstructionMemory.sv|
-!i113 1
 R6
+!s107 C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/InstructionMemory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor|C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/InstructionMemory.sv|
+!i113 1
 R7
 R8
+R9
 n@instruction@memory
 vprocessor
 R1
 R2
 !i10b 1
-!s100 lCF_aknP<n^MAj_CBKPiM2
-Ik1@Dkc?RG37li>3>ll:]^3
+!s100 81Q0OG23I_Fn3;N7ez6h01
+ISVFkTdLOg^LVkW<E_LD?n3
 R3
 !s105 processor_sv_unit
 S1
 R0
-w1761775911
-8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv
-FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv
+w1761954026
+8C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor.sv
+FC:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor.sv|
-!i113 1
 R6
+!s107 C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor|C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor.sv|
+!i113 1
 R7
 R8
+R9
 vprocessor_tb
 R1
-R9
+R17
 !i10b 1
 !s100 5]6OKW<BKLT;VUUD;4h^M1
-Ifd6>e?n5PBZHVJ@7N3C3R2
+IYH>dFY1Z>9k6[O6cHe[@c1
 R3
 !s105 processor_tb_sv_unit
 S1
 R0
-w1761792178
-8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor_tb.sv
-FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor_tb.sv
+R16
+8C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv
+FC:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv
 L0 3
-R4
+R5
 r1
 !s85 0
 31
-R10
-!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/processor_tb.sv|
+R18
+!s107 C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor|C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/processor_tb.sv|
 !i113 1
-R6
 R7
 R8
+R9
 vProgramCounter
 R1
 R2
 !i10b 1
 !s100 8lfoNnm:I`YLW3eW:hHG50
-IPCz6kTnU<5hf`Rh=F0iZI3
+IK=dXElL7W7[535V6[Za`i0
 R3
 !s105 ProgramCounter_sv_unit
 S1
 R0
-w1761778157
-8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv
-FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv
-L0 1
 R4
+8C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ProgramCounter.sv
+FC:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ProgramCounter.sv
+L0 1
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/ProgramCounter.sv|
-!i113 1
 R6
+!s107 C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ProgramCounter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor|C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/ProgramCounter.sv|
+!i113 1
 R7
 R8
+R9
 n@program@counter
 vRegisterUnit
 R1
 R2
 !i10b 1
 !s100 ca9Jo<BDa[TSHGVY0CnH@3
-I2mR7FGXEj<SA1jK4o];mo3
+I;WC?9QoC4Q=HJzOJjWSjg1
 R3
 !s105 RegisterUnit_sv_unit
 S1
 R0
-w1760118046
-8C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/RegisterUnit.sv
-FC:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/RegisterUnit.sv
-L0 1
 R4
+8C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/RegisterUnit.sv
+FC:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/RegisterUnit.sv
+L0 1
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/RegisterUnit.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor|C:/Users/danie/Desktop/UNI/SEMESTRE_VI/Arq/Processor/RegisterUnit.sv|
-!i113 1
 R6
+!s107 C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/RegisterUnit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor|C:/Users/jucac/Desktop/Universidad/Arquitectura/Processor/RegisterUnit.sv|
+!i113 1
 R7
 R8
+R9
 n@register@unit
+vvga_controller_1280x800
+R1
+R2
+!i10b 1
+!s100 mlaYHU:1UOP@;Sf4[]C0Z3
+I4CL4bZ>mMREVe2AV>RZiN3
+R3
+R10
+S1
+R0
+R11
+R12
+R13
+L0 134
+R5
+r1
+!s85 0
+31
+R6
+R14
+R15
+!i113 1
+R7
+R8
+R9
